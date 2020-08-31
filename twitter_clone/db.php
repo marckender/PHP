@@ -24,8 +24,8 @@
 
 
       //verificar se houve erro de conexao
-      if (mysqli_connect_error() ){
-        echo 'Erro ao tentar conectar com o BD mysql: '.mysqli_connect_error();
+      if (mysqli_connect_errno() ){
+        echo 'Erro ao tentar conectar com o BD mysql: '.mysqli_connect_errno();
       }
 
       return $connection;
